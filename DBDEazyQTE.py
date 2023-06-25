@@ -619,29 +619,3 @@ def keyboard_callback(x):
         delay_pixel-=2
         print('delay_pixel:',delay_pixel)
 
-        
-
-def main():
-    # cap_test()
-    
-    import os
-    if not os.path.exists(imgdir):
-        os.mkdir(imgdir)
-    keyboard.on_press(keyboard_callback)
-    threading.Thread(target=keyboard.wait)
-    print('starting')
-    driver()
-
-
-if __name__ == "__main__":
-    main()
-    
-    #!/bin/bash
-while true
-do 
-	# Echo current date to stdout
-	echo `date`
-	# Echo 'error!' to stderr
-	echo 'error!' >&2
-	sleep 1
-done
